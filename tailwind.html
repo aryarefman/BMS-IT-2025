@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Belajar Tailwind</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <style>
     .font-poppins {
@@ -12,7 +12,99 @@
     }
   </style>
 </head>
-<body>
-    
+<body class="bg-gray-100 font-poppins">
+
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold text-blue-600">My Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-blue-500 text-white p-8">
+    <img src="public/WhatsApp Image 2024-08-15 at 23.01.32_1eca6af4.jpg" 
+     alt="Profile" 
+     class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full shadow-lg mb-6 md:mb-0 md:mr-10">
+    <div class="text-center md:text-left spa">
+    <h2 class="text-4xl font-bold mb-2">Halo, Saya Arya</h2>
+    <h3 class="text-3xl font-bold mb-2">Information Technology</h3>
+    <h4 class="text-2xl font-bold mb-2">Sepuluh Nopember Institute Technology</h4>
+      <p class="text-lg max-w-lg">Saya adalah mahasiswa Teknologi Informasi dengan minat di bidang Artificial Intelligence dan Internet of Things. Senang belajar hal baru dan mengembangkan project berbasis teknologi.</p>
+    </div>
+  </section>
+
+<section id="projects" class="py-16 bg-gray-100">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10">My Projects</h2>
+
+    <div class="overflow-x-auto">
+      <div class="flex space-x-6 p-4">
+        
+        <div class="min-w-[250px] bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="public/download.jpeg" 
+               alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Project 1</h3>
+            <p class="text-gray-600">Deskripsi singkat project pertama.</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="public/e0a5bc053f30e548bd186400a3a05e2d.jpg" 
+               alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Project 2</h3>
+            <p class="text-gray-600">Deskripsi singkat project kedua.</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="public/082e33338cc5f5b6308fae2e63047057.jpg" 
+               alt="Project 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Project 3</h3>
+            <p class="text-gray-600">Deskripsi singkat project ketiga.</p>
+          </div>
+        </div>
+
+        <div class="min-w-[250px] bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="public/Kawaii Halloween colouring page.jpeg" 
+               alt="Project 4" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Project 4</h3>
+            <p class="text-gray-600">Deskripsi singkat project keempat.</p>
+          </div>
+        </div>
+        
+        <div class="min-w-[250px] bg-white shadow-md rounded-lg overflow-hidden">
+          <img src="public/Small Retirement House 3D Floor Plan.jpeg" 
+               alt="Project 5" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">Project 5</h3>
+            <p class="text-gray-600">Deskripsi singkat project keempat.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+      <p class="text-gray-600 mb-6">Jika tertarik berkolaborasi, silakan hubungi saya melalui email.</p>
+      <a href="mailto:arya@example.com" class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600">Email Me</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 Arya Refman. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>

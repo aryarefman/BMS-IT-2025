@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layouting</title>
+  <style>
+    h2 {
+      text-align: center;
+    }
+    .container1 {
+      display: flex;
+      background: blue;
+    }
+    p {
+      border: 1px solid black;
+      text-align: center;
+      width: 50px;
+      padding: 2px;
+      background: white;
+    }
+    .container2 {
+      display: flex;
+      background: green;
+      justify-content: center;
+      gap: 2px;
+    }
+    .container3 {
+      display: flex;
+      background: pink;
+      justify-content: end;
+      gap: 2px;
+    }
+    .halfdiv {
+      display: flex;
+      height: 100px;
+    }
+    .red {
+      background: red;
+      width: 100%;
+    }
+    .blue {
+      background: blue;
+      width: 100%;
+    }   
+  </style>
+</head>
+<body>
+  <h2>Flexbox Layout</h2>
+  <div class="container1">
+    <p>Item 1</p>
+    <p>Item 2</p>
+    <p>Item 3</p>
+  </div>
+  <div class="container2">
+    <p>Item 1</p>
+    <p>Item 2</p>
+    <p>Item 3</p>
+  </div>
+  <div class="container3">
+    <p>Item 1</p>
+    <p>Item 2</p>
+    <p>Item 3</p>
+  </div>
+  <div class="halfdiv">
+    <div class="red"></div>
+    <div class="blue"></div>
+  </div>
+</body>
+</html>
